@@ -1,7 +1,13 @@
 import React from 'react';
 import './About.css';
 
-function About() {
+/* 2022-08-25
+  react-router-dom 최신버전 History 변경됨.
+  useHistory 없어지고 useNavigate써야함
+*/
+
+function About(props) {
+    console.log(props)
     return (
         <div className="about__container">
             <span>
